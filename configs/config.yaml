@@ -1,0 +1,35 @@
+bot:
+  token: "8418011321:AAGFcm6Nj97soWES0OxH7-Mrl3Gd-pTDDKY"  
+  debug: true
+  timeout: 60
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "110920"  
+  dbname: "deadline_bot"
+  sslmode: "disable"
+
+server:
+  host: "localhost"
+  port: 8080
+
+files:
+  upload_path: "./uploads"
+  max_size_mb: 50
+  allowed_extensions:
+    - ".pdf"
+    - ".zip"
+    - ".rar"
+    - ".txt"
+    - ".doc"
+    - ".docx"
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+
+notifications:
+  enable_reminders: true
+  check_interval_hours: 0.1  # Проверка каждые 6 минут для тестирования (0.1 часа = 6 минут)
+  default_reminders: [1, 3, 7]  # дни до дедлайна
